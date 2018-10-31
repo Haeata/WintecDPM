@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#FEC107</color>
+    <color name="colorSecondary">#54579F</color>
+    <color name="colorTopBar">#FF9F00</color>
+    <color name="colorWebDevelopment">#E65E5E</color>
+    <color name="colorNetworking">#46B77B</color>
+    <color name="colorSoftwareEngineering">#3FA7D6</color>
+    <color name="colorDatabases">#F79D84</color>
+    <color name="colorCoreModule">#616161</color>
+    <color name="colorBorders">#ECECEC</color>
+    <color name="colorBackground">#FCFCFC</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!-- manage Student -->
+    <color name="colorStudentPrimaryText">#343434</color>
+    <color name="colorStudentSecondaryText">#8F8F8F</color>
+    <color name="colorStudentMenuIcon">#535353</color>
 </resources>

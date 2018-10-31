@@ -104,9 +104,11 @@ public class DbHandler extends SQLiteOpenHelper {
             studentList.add(s);
         }
         cursor.close();
+        db.close();
         return studentList;
     }
 
+    //DELETE Student
     public void deleteStudent (int studentID){
         SQLiteDatabase db = this.getWritableDatabase();
         db.delete(TABLE_STUDENTS,COLUMN_STUDENT_ID + "= ?",
