@@ -1,9 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".AddStudent">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="#FF9F00"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="#FFFFFF"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorStudentTextViewBackground"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titlePathway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorStudentSecondaryText"
+            android:text="@string/titlePathway"/>
+
+        <TextView
+            android:id="@+id/textPathway"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorStudentPrimaryText"
+            android:hint="@string/txtPathwayHint"
+            android:drawableEnd="@drawable/ic_pathway_arrow"
+            android:drawablePadding="2dp"/>
+
+        <TextView
+            android:id="@+id/titleEnrollmentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorStudentSecondaryText" />
+
+        <TextView
+            android:id="@+id/textEnrollmentDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorStudentPrimaryText"
+            android:hint="@string/txtPathwayHint"
+            android:drawableStart="@drawable/ic_enrollmentdate_calendar"
+            android:drawablePadding="2dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/titleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorStudentSecondaryText"
+        android:text="@string/titleStudentName"/>
+
+    <EditText
+        android:id="@+id/textStudentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorStudentPrimaryText"
+        android:hint="@string/txtStudentNameHint"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/titleStudentEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorStudentSecondaryText" />
+
+    <EditText
+        android:id="@+id/textStudentEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorStudentPrimaryText"
+        android:inputType="textEmailAddress"
+        android:hint="@string/txtStudentEmailHint"/>
+
+    <TextView
+        android:id="@+id/titleStudentID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorStudentSecondaryText" />
+
+    <EditText
+        android:id="@+id/textStudentID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorStudentPrimaryText"
+        android:inputType="number"
+        android:hint="@string/txtStudentIDHint"/>
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorSecondary"
+        android:text="@string/titleBtnCreate"
+        android:textColor="@color/colorStudentThirdText"/>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titleBtnCancel" />
+
+</LinearLayout>

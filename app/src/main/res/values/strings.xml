@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">Wintec DPM</string>
+
+    <!-- string for studentMenu -->
+    <string name="btnStudentMenu">Button for pop up Menu</string>
+
+    <!-- string for addStudent -->
+    <string name="titlePathway">Pathway</string>
+    <string name="txtPathwayHint">Select the pathway</string>
+
+    <string name="titleEnrollmentDate">Enrollment Date</string>
+    <string name="txtEnrollmentDateHint">Select the Enrollment Date</string>
+
+    <string name="titleStudentName">Student Name</string>
+    <string name="txtStudentNameHint">Required to put student full name</string>
+
+    <string name="titleStudentEmail">Email Address</string>
+    <string name="txtStudentEmailHint">Required to put student email address</string>
+
+    <string name="titleStudentID">Student ID Number</string>
+    <string name="txtStudentIDHint">Required to put student ID</string>
+
+    <string name="titleBtnCreate">CREATE NEW STUDENT</string>
+    <string name="titleBtnCancel">Cancel</string>
+
 </resources>

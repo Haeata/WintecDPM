@@ -21,7 +21,7 @@
                 android:textSize="17sp"/>
 
             <ImageButton
-                android:id="@+id/btnMenu"
+                android:id="@+id/btnStudentMenu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_student_menu"
@@ -29,14 +29,27 @@
                 android:paddingRight="8dp"
                 android:layout_gravity="end"
                 android:background="@android:color/transparent"
-                android:contentDescription="button for menu"/>
+                android:contentDescription="@string/btnStudentMenu"/>
 
         </android.support.v7.widget.Toolbar>
 
         <TextView
+            android:id="@+id/studentPathway"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorStudentSecondaryText"
-            />
+            android:textColor="@color/colorStudentSecondaryText" />
+
+        <TextView
+            android:id="@+id/studentID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorStudentSecondaryText" />
+
+        <TextView
+            android:id="@+id/studentEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:textColor="@color/colorStudentSecondaryText" />
+
     </LinearLayout>
 </android.support.v7.widget.CardView>

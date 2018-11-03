@@ -16,17 +16,53 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainMenu" />
-        <activity android:name=".StudentModule" />
+        <activity android:name=".MainMenu"
+            android:label="Main Menu" />
+
+        <activity android:name=".StudentModule"
+            android:label="Modules"
+            android:parentActivityName=".MainMenu"/>
+
         <activity android:name=".ModuleDescription" />
-        <activity android:name=".ManagerMenu" />
-        <activity android:name=".ManageStudent" />
-        <activity android:name=".ManageModule" />
-        <activity android:name=".AddStudent" />
-        <activity android:name=".EditStudent" />
-        <activity android:name=".ManagerStudentModule" />
-        <activity android:name=".AddModule" />
-        <activity android:name=".EditModule" />
+
+        <activity
+            android:name=".ManagerMenu"
+            android:label="Manager"
+            android:parentActivityName=".MainMenu" />
+
+        <activity
+            android:name=".ManageStudent"
+            android:label="Students"
+            android:parentActivityName=".ManagerMenu"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ManageModule"
+            android:label="Manage Modules"
+            android:parentActivityName=".ManagerMenu"/>
+
+        <activity
+            android:name=".AddStudent"
+            android:label="New Student"
+            android:parentActivityName=".ManageStudent"/>
+
+        <activity
+            android:name=".EditStudent"
+            android:label="Edit Student"
+            android:parentActivityName=".ManageStudent"/>
+
+        <activity android:name=".ManagerStudentModule"
+            android:label="Modules"
+            android:parentActivityName=".ManageStudent"/>
+
+        <activity android:name=".AddModule"
+            android:label="New Module"
+            android:parentActivityName=".ManageModule"/>
+
+        <activity android:name=".EditModule"
+            android:label="Edit Module"
+            android:parentActivityName=".ManageModule" />
+
         <activity android:name=".AboutUs" />
         <activity android:name=".Resources"></activity>
     </application>

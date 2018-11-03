@@ -2,6 +2,7 @@
 <resources>
     <color name="colorPrimary">#FEC107</color>
     <color name="colorSecondary">#54579F</color>
+    <color name="colorStatusBar">#FF9F00</color>
     <color name="colorTopBar">#FF9F00</color>
     <color name="colorWebDevelopment">#E65E5E</color>
     <color name="colorNetworking">#46B77B</color>
@@ -13,8 +14,12 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <!-- manage Student -->
-    <color name="colorStudentPrimaryText">#343434</color>
-    <color name="colorStudentSecondaryText">#8F8F8F</color>
+    <!-- manageStudent, Add/EditStudent -->
+    <color name="colorStudentPrimaryText">#000000</color>
+    <color name="colorStudentSecondaryText">#535353</color>
     <color name="colorStudentMenuIcon">#535353</color>
+    <color name="colorStudentTextViewBackground">#ECECEC</color>
+    <color name="colorStudentThirdText">#FFFFFF</color>
+
+
 </resources>

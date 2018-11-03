@@ -16,13 +16,28 @@
                             <entry key="actionbar">
                               <value>
                                 <PersistentState>
+                                  <option name="children">
+                                    <map>
+                                      <entry key="clipartAsset">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/hardware/ic_keyboard_arrow_down_black_24dp.xml" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                    </map>
+                                  </option>
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="D:\wintecCourses\COMP709\Assignment\Assignment 3\WintecDPM\app\src\main\res\icons\menu.png" />
-                                      <entry key="outputName" value="ic_student_menu" />
+                                      <entry key="imageAsset" value="D:\wintecCourses\COMP709\Assignment\Assignment 3\WintecDPM\app\src\main\res\icons\calendar-page-empty.png" />
+                                      <entry key="outputName" value="ic_enrollmentdate_calendar" />
                                       <entry key="theme" value="CUSTOM" />
-                                      <entry key="themeColor" value="535353" />
+                                      <entry key="themeColor" value="343434" />
                                     </map>
                                   </option>
                                 </PersistentState>
