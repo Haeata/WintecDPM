@@ -1,9 +1,307 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".AddModule">
 
-</android.support.constraint.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorStudentTextViewBackground"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/titleModuleCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/titleModuleCode"
+                android:textColor="@color/colorStudentSecondaryText"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/textModuleCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/white"
+                android:drawablePadding="5dp"
+                android:hint="@string/txtModuleCodeHint"
+                android:padding="10dp"
+                android:textColor="@color/colorStudentPrimaryText"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/titleModuleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/titleModuleName"
+                android:textColor="@color/colorStudentSecondaryText"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/textModuleName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/white"
+                android:drawablePadding="5dp"
+                android:hint="@string/txtModuleNameHint"
+                android:padding="10dp"
+                android:textColor="@color/colorStudentPrimaryText"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/titlePathway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/titlePathway"
+                android:textColor="@color/colorStudentSecondaryText"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:text= "please select pathway for module.\n Core module consists of all pathways"
+                android:gravity="center"/>
+
+            <CheckBox
+                android:id="@+id/coreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:onClick="onCheckboxClicked"
+                android:padding="10dp"
+                android:text="@string/core" />
+
+            <CheckBox
+                android:id="@+id/webDevText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:onClick="onCheckboxClicked"
+                android:padding="10dp"
+                android:text="@string/web_development" />
+
+            <CheckBox
+                android:id="@+id/networkingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:onClick="onCheckboxClicked"
+                android:padding="10dp"
+                android:text="@string/networking" />
+
+            <CheckBox
+                android:id="@+id/databasesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:onClick="onCheckboxClicked"
+                android:padding="10dp"
+                android:text="@string/databases" />
+
+            <CheckBox
+                android:id="@+id/softwareText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="onCheckboxClicked"
+                android:padding="10dp"
+                android:text="@string/software_engineering" />
+
+            <TextView
+                android:id="@+id/titleLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/titleLevel"
+                android:textColor="@color/colorStudentSecondaryText"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/textLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/white"
+                android:hint="@string/txtLevelHint"
+                android:padding="10dp"
+                android:textColor="@color/colorStudentPrimaryText"
+                android:textSize="18sp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/titleCredits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/titleCredits"
+                android:textColor="@color/colorStudentSecondaryText"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/textCredits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/white"
+                android:hint="@string/txtCreditsHint"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="@color/colorStudentPrimaryText" />
+
+            <TextView
+                android:id="@+id/titleYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/titleYear"
+                android:textColor="@color/colorStudentSecondaryText"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/textYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/white"
+                android:hint="@string/txtYearHint"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="@color/colorStudentPrimaryText" />
+
+            <TextView
+                android:id="@+id/titlePreRequisite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/titlePreRequisite"
+                android:textColor="@color/colorStudentSecondaryText"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/textPreRequisite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/white"
+                android:hint="@string/txtPreRequisiteHint"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/colorStudentPrimaryText" />
+
+            <TextView
+                android:id="@+id/titleCoRequisite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/titleCoRequisite"
+                android:textColor="@color/colorStudentSecondaryText"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/textCoRequisite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/white"
+                android:hint="@string/txtCoRequisiteHint"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/colorStudentPrimaryText" />
+
+            <TextView
+                android:id="@+id/titleDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/titleDescription"
+                android:textColor="@color/colorStudentSecondaryText"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/textDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/white"
+                android:hint="@string/txtDescriptionHint"
+                android:padding="10dp"
+                android:textColor="@color/colorStudentPrimaryText"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnCreateModule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorSecondary"
+                android:padding="10dp"
+                android:text="@string/titleBtnCreateModule"
+                android:textAllCaps="true"
+                android:textColor="@color/colorStudentThirdText" />
+
+            <Button
+                android:id="@+id/btnCancelModule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/white"
+                android:padding="10dp"
+                android:text="@string/titleBtnCancel"
+                android:textAllCaps="true"/>
+        </LinearLayout>
+    </ScrollView>

@@ -1,0 +1,68 @@
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/module_desc"
+    >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:weightSum="100"
+            android:background="@color/menuDrawer">
+
+            <LinearLayout
+                android:weightSum="100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#f6f6f6"
+>
+
+                <TextView
+                    android:layout_weight="100"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Are you sure you want to delete?"
+                    android:textSize="18dp"
+                    android:textColor="#FFF"
+                    android:background="@color/menuDrawer"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_weight="50"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/titleBtnCancel"
+                    android:textAllCaps="true"
+                    />
+
+                <Button
+                    android:id="@+id/delete"
+                    android:layout_weight="50"
+                    android:layout_width="0dp"
+                    android:text="@string/titleBtnDelete"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+</android.widget.RelativeLayout>

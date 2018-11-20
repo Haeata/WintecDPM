@@ -1,5 +1,4 @@
 <resources>
-
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
@@ -8,4 +7,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--Theme for splash screen-->
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--Theme for date picker dialog -->
+    <style name="DatePickerTheme" parent = "Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorStudentSecondaryText</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
 </resources>

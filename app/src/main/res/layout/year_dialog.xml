@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/dialogCardHeader"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        app:cardBackgroundColor="@color/colorSecondary"
+        app:cardCornerRadius="0dp"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="55dp">
+
+        <LinearLayout
+            android:id="@+id/textLayout"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/selectText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="select year"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/colorBackground"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/dialogCardContent"
+            android:layout_width="290dp"
+            android:layout_height="330dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="65dp"
+            app:cardBackgroundColor="@color/colorBackground"
+            app:cardCornerRadius="4dp"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="55dp">
+
+            <LinearLayout
+                android:id="@+id/buttonLayout"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/year1Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/year1Button"
+                        style="@android:style/Widget.ImageButton"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@color/colorCoreModule"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/ic_enrollmentdate_calendar_white" />
+
+                    <TextView
+                        android:id="@+id/year1Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="Year 1"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/year2Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/year2Button"
+                        style="@android:style/Widget.ImageButton"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@color/colorCoreModule"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/ic_enrollmentdate_calendar_white" />
+
+                    <TextView
+                        android:id="@+id/year2Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="Year 2"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/year3Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/allYearsButton"
+                        style="@android:style/Widget.ImageButton"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@color/colorCoreModule"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/ic_enrollmentdate_calendar_white" />
+
+                    <TextView
+                        android:id="@+id/alYearsText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="Year 3"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/allYearsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/year3Button"
+                        style="@android:style/Widget.ImageButton"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@color/colorCoreModule"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/ic_enrollmentdate_calendar_white" />
+
+                    <TextView
+                        android:id="@+id/year3Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="All Years"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="25dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_horizontal"
+                android:rotation="180"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_triangle" />
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

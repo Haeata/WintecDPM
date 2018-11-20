@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">Wintec DPM</string>
 
+    <string name="Main_Menu">Main Menu</string>
+    <string name="Manager_Menu">Manager Menu</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="action_settings">Settings</string>
+
     <!-- string for studentMenu -->
     <string name="btnStudentMenu">Button for pop up Menu</string>
 
@@ -20,7 +26,57 @@
     <string name="titleStudentID">Student ID Number</string>
     <string name="txtStudentIDHint">Required to put student ID</string>
 
-    <string name="titleBtnCreate">CREATE NEW STUDENT</string>
+
+    <!-- string for button -->
+    <string name="titleBtnCreateStudent">create new student</string>
     <string name="titleBtnCancel">Cancel</string>
+    <string name="titleBtnEdit">edit new student</string>
+    <string name="titleMenuEdit">Edit</string>
+    <string name="titleMenuDelete">Delete</string>
+    <string name="titleBtnSignIn">Sign in</string>
+
+    <!-- string for pathway -->
+    <string name="networking">Networking</string>
+    <string name="databases">Databases</string>
+    <string name="software_engineering">Software Engineering</string>
+    <string name="web_development">Web Development</string>
+    <string name="select_a_pathway">select a pathway</string>
+    <string name="PhotoDesc">student photo for identification</string>
+    <string name="titleStudentPhoto">Student Photo</string>
+
+    <!-- string for addModule -->
+    <string name="titleModuleName">Module Name</string>
+    <string name="txtModuleNameHint">Enter module name</string>
+
+    <string name="titleModuleCode">Module Code</string>
+    <string name="txtModuleCodeHint">Enter module code</string>
+
+    <string name="titleLevel">Level</string>
+    <string name="txtLevelHint">Select the level</string>
+
+    <string name="titleCredits">Credits</string>
+    <string name="txtCreditsHint">Required to enter amount of credits</string>
+
+    <string name="titleYear">Year</string>
+    <string name="txtYearHint">Enter in a required year (1,2,3)</string>
+
+    <string name="titlePreRequisite">Pre-requisite</string>
+    <string name="txtPreRequisiteHint">Enter in Pre-requisite(s) (E.g. INFO601, COMP601) or None</string>
+
+    <string name="titleCoRequisite">Co-requisite</string>
+    <string name="txtCoRequisiteHint">Enter in Co-requisite(s) (E.g. INFO601, COMP601)</string>
+
+    <string name="titleDescription">Description</string>
+    <string name="txtDescriptionHint">Enter in a short description</string>
+
+    <string name="titleBtnCreateModule">CREATE NEW MODULE</string>
+    <string name="titleBtnCancelModule">Cancel</string>
+
+    <string name="titleBtnEditModule">EDIT MODULE</string>
+
+    <string name="core">Core</string>
+    <string name="titleBtnSave">SAVE</string>
+    <string name="titleBtnDelete">Delete</string>
+
 
 </resources>

@@ -1,9 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".EditStudent">
 
-</android.support.constraint.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorStudentTextViewBackground"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/titlePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/titleStudentPhoto"
+                android:textColor="@color/colorStudentSecondaryText"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/studentPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_add_a_photo"
+                android:contentDescription="@string/PhotoDesc"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/titlePathway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/titlePathway"
+                android:textColor="@color/colorStudentSecondaryText"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textPathway"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/white"
+                android:drawableEnd="@drawable/ic_pathway_expand"
+                android:drawablePadding="5dp"
+                android:hint="@string/txtPathwayHint"
+                android:padding="10dp"
+                android:textColor="@color/colorStudentPrimaryText"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/titleEnrollmentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/titleEnrollmentDate"
+                android:textColor="@color/colorStudentSecondaryText"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textEnrollmentDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/white"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_enrollmentdate_calendar"
+                android:hint="@string/txtEnrollmentDateHint"
+                android:padding="10dp"
+                android:textColor="@color/colorStudentPrimaryText"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/titleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/titleStudentName"
+                android:textColor="@color/colorStudentSecondaryText"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/textStudentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/white"
+                android:hint="@string/txtStudentNameHint"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/colorStudentPrimaryText" />
+
+            <TextView
+                android:id="@+id/titleStudentEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/titleStudentEmail"
+                android:textColor="@color/colorStudentSecondaryText"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/textStudentEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/white"
+                android:hint="@string/txtStudentEmailHint"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="@color/colorStudentPrimaryText" />
+
+            <TextView
+                android:id="@+id/titleStudentID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/titleStudentID"
+                android:textColor="@color/colorStudentSecondaryText"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/textStudentID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorStudentSecondaryText"
+                android:enabled="false"
+                android:hint="@string/txtStudentIDHint"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="@color/colorStudentPrimaryText" />
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorSecondary"
+                android:padding="10dp"
+                android:text="@string/titleBtnEdit"
+                android:textColor="@color/colorStudentThirdText" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/white"
+                android:padding="10dp"
+                android:text="@string/titleBtnCancel" />
+        </LinearLayout>
+</ScrollView>

@@ -1,21 +1,38 @@
 package wintec_cfit_managers.wintecdpm;
 
 public class Student {
-    int StudentID;
-    String Name;
-    String Email;
-    String EnrollmentDate;
-    String Pathway;
+    private int StudentID;
+    private String Name;
+    private String Email;
+    private String EnrollmentDate;
+    private String Pathway;
+    private byte[] Photo;
 
-    public Student(){
 
+    //empty constructor
+    Student(){
     }
-    public Student(int studentID, String name, String email, String enrollmentDate, String pathway) {
+
+    //constructor for default
+
+    //constructor for insert
+    Student(int studentID, String name, String email, String enrollmentDate, String pathway, byte[] Photo) {
         this.StudentID = studentID;
         this.Name = name;
         this.Email = email;
         this.EnrollmentDate = enrollmentDate;
         this.Pathway = pathway;
+        this.Photo = Photo;
+    }
+
+    //constructor for update
+    Student(String name, String email, String enrollmentDate, String pathway, byte[] Photo) {
+        this.Name = name;
+        this.Email = email;
+        this.EnrollmentDate = enrollmentDate;
+        this.Pathway = pathway;
+        this.Photo = Photo;
+
     }
 
     public int getStudentID() {
@@ -57,4 +74,13 @@ public class Student {
     public void setPathway(String pathway) {
         Pathway = pathway;
     }
+
+    public byte[] getPhoto() {
+        return Photo;
+    }
+
+    public void setPhoto(byte[] photo) {
+        Photo = photo;
+    }
+
 }

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:title="home"
+            android:icon="@drawable/ic_home"
+            android:orderInCategory="100"
+            app:showAsAction="never"
+
+            />
+
+        <item
+            android:id="@+id/students_cap"
+            android:title="Manage Students"
+            android:icon="@drawable/ic_students_cap"
+            android:orderInCategory="100"
+            app:showAsAction="never"
+
+            />
+
+        <item
+            android:id="@+id/manage_module"
+            android:title="Manage Module"
+            android:icon="@drawable/ic_manager_gears"
+            android:orderInCategory="100"
+            app:showAsAction="never"
+
+            />
+
+        <item
+            android:id="@+id/about"
+            android:title="About"
+            android:icon="@drawable/ic_whale"
+            android:orderInCategory="100"
+            app:showAsAction="never"
+
+            />
+
+        <item
+            android:id="@+id/signout"
+            android:title="Sign Out"
+            android:icon="@drawable/ic_signout"
+            android:orderInCategory="100"
+            app:showAsAction="never"
+
+            />
+
+
+    </group>
+
+</menu>

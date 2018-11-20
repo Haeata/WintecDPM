@@ -1,0 +1,241 @@
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/module_desc"
+    >
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:weightSum="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_weight="50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Module Code:"
+                android:textSize="18dp"/>
+
+
+            <TextView
+                android:id="@+id/moduleCodeTv"
+                android:layout_weight="50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:background="#f6f6f6"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_weight="50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Module Name:"
+                android:textSize="18dp"/>
+
+
+            <TextView
+                android:id="@+id/moduleNAmeTv"
+                android:layout_weight="50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="10"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_weight="50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Pathway:"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/pathwayTv"
+                android:layout_weight="50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:background="#f6f6f6"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_weight="50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Level:"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_weight="50"
+                android:id="@+id/levelTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_weight="50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Year:"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_weight="50"
+                android:id="@+id/yearTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:background="#f6f6f6"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_weight="50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Credits:"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_weight="50"
+                android:id="@+id/creditsTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_weight="50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Prequisites:"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_weight="50"
+                android:id="@+id/prereqTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:background="#f6f6f6"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_weight="50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Co-requisites:"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_weight="50"
+                android:id="@+id/coreqTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_weight="50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description:"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_weight="50"
+                android:id="@+id/descTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</android.widget.RelativeLayout>

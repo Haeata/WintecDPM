@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="wintec_cfit_managers.wintecdpm">
 
+    <uses-feature android:name="android.hardware.camera2" android:required="true"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,62 +11,72 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Splash">
+
+
+        <activity
+            android:name=".Splash"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".MainMenu"
-            android:label="Main Menu" />
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".ManagerMenu"
+        android:parentActivityName=".MainMenu"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
 
         <activity android:name=".StudentModule"
             android:label="Modules"
-            android:parentActivityName=".MainMenu"/>
+            android:parentActivityName=".ManagerMenu"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
 
-        <activity android:name=".ModuleDescription" />
-
-        <activity
-            android:name=".ManagerMenu"
-            android:label="Manager"
-            android:parentActivityName=".MainMenu" />
 
         <activity
             android:name=".ManageStudent"
             android:label="Students"
             android:parentActivityName=".ManagerMenu"
-            android:windowSoftInputMode="adjustResize" />
-
-        <activity
-            android:name=".ManageModule"
-            android:label="Manage Modules"
-            android:parentActivityName=".ManagerMenu"/>
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"/>
 
         <activity
             android:name=".AddStudent"
             android:label="New Student"
-            android:parentActivityName=".ManageStudent"/>
+            android:parentActivityName=".ManageStudent"
+            android:screenOrientation="portrait">
+        </activity>
 
         <activity
             android:name=".EditStudent"
             android:label="Edit Student"
-            android:parentActivityName=".ManageStudent"/>
-
-        <activity android:name=".ManagerStudentModule"
-            android:label="Modules"
-            android:parentActivityName=".ManageStudent"/>
+            android:parentActivityName=".ManageStudent"
+            android:screenOrientation="portrait"/>
 
         <activity android:name=".AddModule"
             android:label="New Module"
-            android:parentActivityName=".ManageModule"/>
+            android:parentActivityName=".StudentModule"
+            android:screenOrientation="portrait"/>
 
         <activity android:name=".EditModule"
             android:label="Edit Module"
-            android:parentActivityName=".ManageModule" />
+            android:parentActivityName=".StudentModule"
+            android:screenOrientation="portrait"/>
 
-        <activity android:name=".AboutUs" />
-        <activity android:name=".Resources"></activity>
+        <activity android:name=".AboutUs"
+            android:label="About Us"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Resources"
+            android:label="Resources"
+            android:parentActivityName=".AboutUs"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

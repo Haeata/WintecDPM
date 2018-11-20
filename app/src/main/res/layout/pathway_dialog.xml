@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/dialogCardHeader"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        app:cardBackgroundColor="@color/colorSecondary"
+        app:cardCornerRadius="0dp"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="55dp">
+
+        <LinearLayout
+            android:id="@+id/textLayout"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/selectText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/select_a_pathway"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/colorBackground"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/dialogCardContent"
+            android:layout_width="290dp"
+            android:layout_height="330dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="65dp"
+            app:cardBackgroundColor="@color/colorBackground"
+            app:cardCornerRadius="4dp"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="55dp">
+
+            <LinearLayout
+                android:id="@+id/buttonLayout"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:weightSum="100">
+                    <LinearLayout
+                        android:id="@+id/webDevLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="26"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/webDevButton"
+                            style="@android:style/Widget.ImageButton"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/circle"
+                            android:backgroundTint="@color/colorWebDevelopment"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/ic_web_dev_icon" />
+
+                        <TextView
+                            android:id="@+id/webDevText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:text="@string/web_development"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/networkingLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="26"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/networkingButton"
+                        style="@android:style/Widget.ImageButton"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@color/colorNetworking"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/ic_networking" />
+
+                    <TextView
+                        android:id="@+id/networkingText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart ="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/networking"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/softwareLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="26"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/softwareButton"
+                        style="@android:style/Widget.ImageButton"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@color/colorSoftwareEngineering"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/ic_programming" />
+
+                    <TextView
+                        android:id="@+id/softwareText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart ="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/software_engineering"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/databaseLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="26"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/databaseButton"
+                        style="@android:style/Widget.ImageButton"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@color/colorDatabases"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/ic_database" />
+
+                    <TextView
+                        android:id="@+id/databaseText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/databases"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="25dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_horizontal"
+                android:rotation="180"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_triangle" />
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

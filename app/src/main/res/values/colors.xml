@@ -4,15 +4,18 @@
     <color name="colorSecondary">#54579F</color>
     <color name="colorStatusBar">#FF9F00</color>
     <color name="colorTopBar">#FF9F00</color>
+
+
     <color name="colorWebDevelopment">#E65E5E</color>
     <color name="colorNetworking">#46B77B</color>
     <color name="colorSoftwareEngineering">#3FA7D6</color>
     <color name="colorDatabases">#F79D84</color>
     <color name="colorCoreModule">#616161</color>
+
     <color name="colorBorders">#ECECEC</color>
     <color name="colorBackground">#FCFCFC</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#54579F</color>
 
     <!-- manageStudent, Add/EditStudent -->
     <color name="colorStudentPrimaryText">#000000</color>
@@ -20,6 +23,21 @@
     <color name="colorStudentMenuIcon">#535353</color>
     <color name="colorStudentTextViewBackground">#ECECEC</color>
     <color name="colorStudentThirdText">#FFFFFF</color>
+
+
+    <color name="secondary">#EEEEEE</color>
+    <color name="topBar">#FF9F00</color>
+    <color name="menuDrawer">#54579F</color>
+
+    <color name="webDev">#E65E5E</color>
+    <color name="networking">#46B77B</color>
+    <color name="software">#3FA7D6</color>
+    <color name="database">#F79D84</color>
+    <color name="coreModule">#616161</color>
+
+    <color name="background">#FCFCFC</color>
+    <color name="TransparentWhite">#96000000</color>
+
 
 
 </resources>
