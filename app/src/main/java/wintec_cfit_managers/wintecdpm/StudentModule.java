@@ -219,6 +219,8 @@ public class StudentModule extends AppCompatActivity implements AdapterView.OnIt
                         SharedPreferences.Editor editor = settings.edit();
                         editor.clear();
                         editor.commit();
+                        Intent signout = new Intent(getApplicationContext(),MainMenu.class);
+                        startActivity(signout);
                         finish();
                     }
                     return super.onOptionsItemSelected(item);

@@ -74,6 +74,8 @@ public class AboutUs extends AppCompatActivity implements NavigationView.OnNavig
                     SharedPreferences.Editor editor = settings.edit();
                     editor.clear();
                     editor.commit();
+                    Intent signout = new Intent(getApplicationContext(),MainMenu.class);
+                    startActivity(signout);
                     finish();
                 }
                 return super.onOptionsItemSelected(item);
