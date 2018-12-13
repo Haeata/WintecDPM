@@ -1,6 +1,6 @@
 # WintecDPM
 Degree Programme Mapper Created as an assignment by myself Haeata Mikere, Liam Park, Curtis Adams, Levi Ormsby and Adam Haley
+My role on this assignment was group leader and junior coder.
 
-A bit about myself: I'm interested in java, in particula android app development as well as MySql,SQLPlus and DB Architecture. 
-I am currently in the last half of my third year of a Bachelors of Applied IT at Waikato Institute of Technology.
-Currently in my spare time I like to practice and create apps on android platform
+My contribution:
+I created the splash screen, disclaimer, sign in, the main menu, menu drawers and colaborated on edit modules and designing concept.
